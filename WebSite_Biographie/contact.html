@@ -31,33 +31,36 @@
             </div>
           </nav>
     </header>
-
-    <div class="jumbotron">
-      <div class="mx-auto text-center" style="padding-top: 70px; font-family:Verdana, Geneva, Tahoma, sans-serif">
-        <h1 class="display-4">Qu'est-ce que Biograph'Assoc ?</h1>
-        <p class="lead">Il s'agit d'une Association française a but non lucratif, basée sur le monde de la biographie et l'auto-biographie. Rejoignez-nous !</p>
-      </div>
-    </div>
-    <div class="row-text">
-    <div class="bloc-text" style="padding-top: 10px; padding-left: 10px">
-      <h3>Nos Objectifs ?</h3>
-      <p>- Rassembler un maximum de lecteurs et leur faire découvrir le monde formidable de la biographie.</p>
-      <p>- Vous tenir au courant des dernières actualités biographiques.</p>
-    </div>
-    <div class="bloc-text" style="padding-top: 10px; padding-left: 10px">
-      <h3 class="d-flex justify-content-end">Créée en 1953</h3>
-      <p class="d-flex justify-content-end">Notre Association fait peau neuve et attire un nouveau public avec ce site !</p>
-    </div>
-    <div class="bloc-text" style="padding-top: 10px; padding-left: 10px">
-      <h3>A venir :</h3>
-      <p>- Concours Biograph'Assoc de nos lecteurs !</p>
-      <p>- Rencontre au pied de la Tour Eiffel !</p>
-    </div>
-    <div class="bloc-text" style="padding-top: 10px; padding-left: 10px">
-      <h3 class="d-flex justify-content-end">Créons ensemble ta propre biographie !</h3>
-      <p class="d-flex justify-content-end">Notre Association peut t'aider à t'exprimer plus librement et raconter ton vécu.</p>
-    </div>
-    </div>
+    
+    <div class="container contact-form rounded">
+        <div class="contact-image">
+            <img src="https://static.vecteezy.com/system/resources/previews/002/219/582/original/illustration-of-book-icon-free-vector.jpg" alt="book_contact"/>
+        </div>
+        <form method="post">
+            <h3>Contactez-nous !</h3>
+           <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group mb-3">
+                        <input type="text" name="txtName" class="form-control" placeholder="Votre Prénom" value="" />
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="text" name="txtEmail" class="form-control" placeholder="Votre Adresse Mail" value="" />
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="text" name="txtPhone" class="form-control" placeholder="Votre N° de Téléphone" value="" />
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="submit" name="btnSubmit" class="btnContact" value="Envoyer" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <textarea name="txtMsg" class="form-control" placeholder=" Ecrivez ici Votre Message" style="width: 100%; height: 150px;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+</div>
 
     <div class="container">
       <footer class="fixed-bottom">
