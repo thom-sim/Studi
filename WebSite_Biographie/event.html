@@ -4,35 +4,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WebSite Biographie</title>
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.min.css"rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
     <header>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <div class="container-fluid">
               <ul class="navbar-nav">
-                <a class="navbar-brand" href="index.html">
-                    <img src="https://toppng.com/uploads/preview/experience-the-discussion-online-library-book-logo-11562996058ru4peza6zq.png" alt="Logo" style="width:40px;" class="rounded-pill">  Association Biographie
-                  </a>
-               <li class="nav-item">
-                  <a class="nav-link" href="event.html">Actualités</a>
-                </li>
+                <a href="index.html" class="navbar-left"><img src="https://toppng.com/uploads/preview/experience-the-discussion-online-library-book-logo-11562996058ru4peza6zq.png" alt="Logo" class="rounded-pill" style="width:60px"></a>
+                <a class="navbar-brand"  href="index.html">Biograph'Assoc</a>
+                  <li class="nav-item" style="padding-left: 80px">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="event.html">Actualités</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contacts</a>
+                  </li>
               </ul>
               <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
                 <button class="btn btn-outline-light" type="submit">Recherche</button>
               </form>
             </div>
           </nav>
        
     </header>
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <div class="pt-md-5 mx-auto text-center" style="font-family:Verdana, Geneva, Tahoma, sans-serif">
         <h1 class="display-4">Actualités</h1>
         <p class="lead">Que se passe-t'il dans le monde de la Biographie ? Qui a obtenu le dernier Prix de la meilleure Biographie ? Quand se déroule le prochain Festival ?</p>
       </div>
-    <div class="row justify-content-around mx-auto">
-        <div class="col-3">
-            <div class="card">
+    <div class="card-columns d-flex justify-content-around">
+        <div class=" mb-5">
+            <div class="card text-white bg-dark">
                 <img src="https://2104siteneuville-1278.kxcdn.com/wp-content/uploads/2022/09/FestivalBiographie2022_EVENT-1024x537.jpg" class="card-img-top" alt="Festival">
                 <div class="card-body">
                     <h5 class="card-title">Le dernier Festival de la Biographie est un succès !</h5>
@@ -41,10 +47,13 @@
                         Elle a réuni près de 200 auteurs et accueilli 1200 personnes au cours de la journée !
                     </p>
                 </div>
+                <div class="card-footer">
+                  <small class="text-muted">Mis à jour il y a 2 heures</small>
+                </div>
             </div>
         </div>
-        <div class="col-3">
-            <div class="card">
+        <div class=" mb-5">
+            <div class="card text-white bg-dark">
                 <img src="https://communautes.cultura.com/t5/image/serverpage/image-id/81710iC5F3EDFCF9076885?v=v2" class="card-img-top" alt="Prix">
                 <div class="card-body">
                     <h5 class="card-title">Et le Prix Goncourt de la Biographie 2021 revient à Pauline Dreyfus !</h5>
@@ -53,10 +62,13 @@
                         Le prix ne sera remis que le 11 septembre à Nancy lors du Livre sur le Place.
                     </p>
                 </div>
+                <div class="card-footer">
+                  <small class="text-muted">Mis à jour il y a 15 heures</small>
+                </div>
             </div>
         </div>
-        <div class="col-3">
-            <div class="card">
+        <div class=" mb-5">
+            <div class="card text-white bg-dark">
                 <img src="https://cache.cosmopolitan.fr/data/photo/w1000_ci/6c/prince-harry.jpg" class="card-img-top" alt="Méditation">
                 <div class="card-body">
                     <h5 class="card-title">Le Prince Harry reporte la sortie de sa biographie choc...</h5>
@@ -65,7 +77,21 @@
                         Annoncée à l’été 2021 par l’éditeur Penguin Random House, elle ne devrait finalement pas sortir avant 2023.
                     </p>
                 </div>
+                <div class="card-footer">
+                  <small class="text-muted">Mis à jour il y a 2 jours</small>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="container">
+      <footer class="fixed-bottom">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Accueil</a></li>
+          <li class="nav-item"><a href="event.html" class="nav-link px-2 text-muted">Actualités</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contacts</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; 2022 Biograph'Assoc</p>
+      </footer>
+    </div>
   </body>
 </html>
