@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="C'est un jeu en ligne à deux joueurs dans lequel les joueurs essaient de lancer un dé et obtenir un total de 100 points."/>
+
+    <meta property="og:title" content="Dice Game" />
+    <meta property="og:type" content="website" />
+    <meta property="description" content="C'est un jeu en ligne à deux joueurs dans lequel les joueurs essaient de lancer un dé et obtenir un total de 100 points."/>
+
+    <!--Ionic CDN CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="robots" content="index follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/webp" href="./images/favicon.webp" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <ion-app>
+      <ion-content fullscreen>
+        <ion-grid id="playerTurnColor" class="ion-no-margin">
+          <!--First row-->
+          <ion-row>
+            <ion-col size="12">
+              <ion-button id="startGame" fill="clear" color="dark">
+                <ion-icon name="add-circle-outline"></ion-icon>
+                New Game
+              </ion-button>
+            </ion-col>
+          </ion-row>
+          <!--Second row-->
+          <ion-row class="second-row">
+            <ion-col class="player-col" size="12" size-lg="4">
+              <!--Player 1 row-->
+              <ion-row>
+                <!--Player 1 name-->
+                <ion-col class="current-player-display" size="12">
+                  <p id="firstPlayerName" class="players-name">Player 1</p>
+                  <span id="firstPlayerTurn"></span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <!--Player 1 global score-->
+                <ion-col size="12">
+                  <p id="firstPlayerGlobalScore" class="global-players-score">
+                    0
+                  </p>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <!--Player 1 current score-->
+                <ion-col size="12">
+                  <section class="current-number">
+                    <p>Current</p>
+                    <p id="firstPlayerCurrentScore" class="current-score">0</p>
+                  </section>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+            <ion-col size="12" size-lg="4">
+              <!--Dice row-->
+              <ion-row>
+                <ion-col id="dieFace" size="12">
+                  <div class="dice fourth-face">
+                    <div class="column">
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                    <div class="column">
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-row>
+                    <ion-col size="12">
+                      <!--Buttons to play-->
+                      <ion-button id="rollDice" fill="clear" color="dark">
+                        <ion-icon
+                          class="center-buttons"
+                          name="reload-outline"
+                        ></ion-icon>
+                        Roll Dice
+                      </ion-button>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col id="hold" size="12">
+                      <ion-button fill="clear" color="dark">
+                        <ion-icon
+                          class="center-buttons"
+                          name="download-outline"
+                        ></ion-icon>
+                        Hold
+                      </ion-button>
+                    </ion-col>
+                  </ion-row>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+            <ion-col size="12" size-lg="4">
+              <!--Player 2 row-->
+              <ion-row>
+                <!--Player 2 name-->
+                <ion-col class="current-player-display" size="12">
+                  <p id="secondPlayerName" class="players-name">Player 2</p>
+                  <span id="secondPlayerTurn"></span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <!--Player 2 global score-->
+                <ion-col size="12">
+                  <p id="secondPlayerGlobalScore" class="global-players-score">
+                    0
+                  </p>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <!--Player 2 current score-->
+                <ion-col size="12">
+                  <section class="current-number">
+                    <p>Current</p>
+                    <p id="secondPlayerCurrentScore" class="current-score">0</p>
+                  </section>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-content>
+    </ion-app>
+    <!--Ionic CDN JS files-->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    
+    <script defer src="./scripts/documentVariables.js"></script>
+    <script defer src="./scripts/modal.js"></script>
+    <script defer src="./scripts/functions.js"></script>
+    <noscript>
+      Pensez à activer JavaScript ou à utiliser un
+      navigateur prenant en charge JavaScript.
+    </noscript>
+  </body>
+</html>
